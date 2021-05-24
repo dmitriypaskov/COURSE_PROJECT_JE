@@ -3,15 +3,15 @@ package pashkov.entity;
 public class Group {
 
     private Integer id;
-    private Curator curator;
+    private Teacher teacher;
     private Student student;
     private Integer courseNumber;
     private Character courseIndex;
     private Timetable timetable;
 
-    public Group(Integer id, Curator curator, Student student, Integer courseNumber, Character courseIndex, Timetable timetable) {
+    public Group(Integer id, Teacher teacher, Student student, Integer courseNumber, Character courseIndex, Timetable timetable) {
         this.id = id;
-        this.curator = curator;
+        this.teacher = teacher;
         this.student = student;
         this.courseNumber = courseNumber;
         this.courseIndex = courseIndex;
@@ -22,8 +22,8 @@ public class Group {
         return id;
     }
 
-    public Curator getCurator() {
-        return curator;
+    public Teacher getTeacher() {
+        return teacher;
     }
 
     public Student getStudent() {
@@ -46,8 +46,8 @@ public class Group {
         this.id = id;
     }
 
-    public void setCurator(Curator curator) {
-        this.curator = curator;
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
 
     public void setStudent(Student student) {

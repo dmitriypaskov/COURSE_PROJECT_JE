@@ -4,36 +4,36 @@ import java.time.LocalDate;
 
 public class Student extends User {
 
-    private static class Parent extends User{
+    private static class Parent extends User {
 
-        public Parent(int id, String name, String surname, String middleName, LocalDate birthDate) {
+        public Parent(Integer id, String name, String surname, String middleName, LocalDate birthDate) {
             super(id, name, surname, middleName, birthDate);
         }
     }
 
-    private int courseNumber;
+    private Integer courseNumber;
     private char courseIdentifier;
 
-    public Student(int id, String name, String surname, String middleName,
-                   LocalDate birthDate, int courseNumber, char courseIdentifier) {
+    public Student(Integer id, String name, String surname, String middleName,
+                   LocalDate birthDate, Integer courseNumber, Character courseIdentifier) {
         super(id, name, surname, middleName, birthDate);
         this.courseNumber = courseNumber;
         this.courseIdentifier = courseIdentifier;
     }
 
-    public int getCourseNumber() {
+    public Integer getCourseNumber() {
         return courseNumber;
     }
 
-    public char getCourseIdentifier() {
+    public Character getCourseIdentifier() {
         return courseIdentifier;
     }
 
-    public void setCourseNumber(int courseNumber) {
+    public void setCourseNumber(Integer courseNumber) {
         this.courseNumber = courseNumber;
     }
 
-    public void setCourseIdentifier(char courseIdentifier) {
+    public void setCourseIdentifier(Character courseIdentifier) {
         this.courseIdentifier = courseIdentifier;
     }
 }
