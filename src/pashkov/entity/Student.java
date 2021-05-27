@@ -4,15 +4,8 @@ import java.time.LocalDate;
 
 public class Student extends User {
 
-    private static class Parent extends User {
-
-        public Parent(Integer id, String name, String surname, String middleName, LocalDate birthDate) {
-            super(id, name, surname, middleName, birthDate);
-        }
-    }
-
     private Integer courseNumber;
-    private char courseIdentifier;
+    private Character courseIdentifier;
 
     public Student(Integer id, String name, String surname, String middleName,
                    LocalDate birthDate, Integer courseNumber, Character courseIdentifier) {
